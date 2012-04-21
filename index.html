@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Password Assistant by mcleanlewis</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Assistant</h1>
+        <p>a CLI for generating passwords from phrase &amp; passphrase pairs</p>
+        <p class="view"><a href="https://github.com/mcleanlewis/PasswordAssistant">View the Project on GitHub <small>mcleanlewis/PasswordAssistant</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mcleanlewis/PasswordAssistant/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mcleanlewis/PasswordAssistant/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mcleanlewis/PasswordAssistant">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>I kept using the same passwords online, I always knew it was a bad idea but never did anything to fix it.</p>
+
+<p>This is my attempt to never have to worry about password similarity and remembering them.</p>
+
+<p>The program takes any phrase and returns a 10 character string, there are a couple of configurations and uses:</p>
+
+<p>1) Use the default passphrase (change this if using) and just run the CLI in a loop, use 'exit' to finish.</p>
+
+<p>bash-3.2$ pass
+Enter 'exit' to exit
+EnterWebSite :
+<a href="http://www.github.com">www.github.com</a>
+olWt5dLEZv</p>
+
+<p>2) Specify an argument to use as a custom passphrase and enter loop, use 'exit' to finish.</p>
+
+<p>bash-3.2$ pass addcustompassphrase
+Enter 'exit' to exit
+EnterWebSite :
+<a href="http://www.github.com">www.github.com</a>
+olWt5dLEZv</p>
+
+<p>3) Specify an argument to use as a custom passphrase and a phrase to operate on, this does not enter a loop.</p>
+
+<p>bash-3.2$ pass addcustompassphrase <a href="http://www.github.com">www.github.com</a>
+olWt5dLEZv</p>
+
+<p>The program uses DES,strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase. If someone wanted my facebook password that bad I'm sure there are easier ways.</p>
+
+<p>I've compiled to a executable Jar and placed the alias 'pass' in my .bashrc to allow easier access.</p>
+
+<p>alias pass="java -jar /Users/lewis/Dropbox/apps/password.jar"</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mcleanlewis">mcleanlewis</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
