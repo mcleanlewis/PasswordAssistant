@@ -1,0 +1,16 @@
+I kept using the same passwords online, I always knew it was a bad idea but never did anything to fix it.
+
+This is my attempt to never have to worry about password similarity and remembering them.
+
+The program takes any phrase and returns a 10 character string, there are a couple of configurations and uses:
+
+1) Use the default passphrase and just run the CLI in a loop
+2) specify an argument to use as a custom passphrase and enter loop
+3) specify an argument to use as a custom passphrase and a phrase to operate on
+
+The The program uses DES and then strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase.
+
+I've compiled to a executable Jar and placed the alias in my .bashrc to allow easier access.
+
+alias pass="java -jar /Users/lewis/Dropbox/apps/password.jar"
+
