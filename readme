@@ -4,13 +4,30 @@ This is my attempt to never have to worry about password similarity and remember
 
 The program takes any phrase and returns a 10 character string, there are a couple of configurations and uses:
 
-1) Use the default passphrase and just run the CLI in a loop
+1) Use the default passphrase and just run the CLI in a loop (change this if using)
+
+bash-3.2$ pass
+Enter 'exit' to exit
+EnterWebSite :
+www.github.com
+olWt5dLEZv
+
 2) specify an argument to use as a custom passphrase and enter loop
+
+bash-3.2$ pass addcustompassphrase
+Enter 'exit' to exit
+EnterWebSite :
+www.github.com
+olWt5dLEZv
+
 3) specify an argument to use as a custom passphrase and a phrase to operate on
 
-The The program uses DES and then strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase.
+bash-3.2$ pass addcustompassphrase www.github.com
+olWt5dLEZv
 
-I've compiled to a executable Jar and placed the alias in my .bashrc to allow easier access.
+The program uses DES and then strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase. If someone wanted my facebook password that bad I'm sure there would be easier ways.
+
+I've compiled to a executable Jar and placed the alias 'pass' in my .bashrc to allow easier access.
 
 alias pass="java -jar /Users/lewis/Dropbox/apps/password.jar"
 
