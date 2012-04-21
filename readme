@@ -25,7 +25,7 @@ olWt5dLEZv
 bash-3.2$ pass addcustompassphrase www.github.com
 olWt5dLEZv
 
-The program uses DES and then strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase. If someone wanted my facebook password that bad I'm sure there would be easier ways.
+The program uses DES,strips out some unwanted char's and trims the password down to 10 chars. Using DES is obviously weaker than another custom hash as in theory, it is possible to get back to the original phrase. If someone wanted my facebook password that bad I'm sure there are easier ways.
 
 I've compiled to a executable Jar and placed the alias 'pass' in my .bashrc to allow easier access.
 
