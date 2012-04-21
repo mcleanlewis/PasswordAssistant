@@ -4,7 +4,7 @@ This is my attempt to never have to worry about password similarity and remember
 
 The program takes any phrase and returns a 10 character string, there are a couple of configurations and uses:
 
-1) Use the default passphrase and just run the CLI in a loop (change this if using)
+1) Use the default passphrase and just run the CLI in a loop (change this if using), use 'exit' to finish.
 
 bash-3.2$ pass
 Enter 'exit' to exit
@@ -12,7 +12,7 @@ EnterWebSite :
 www.github.com
 olWt5dLEZv
 
-2) specify an argument to use as a custom passphrase and enter loop
+2) Specify an argument to use as a custom passphrase and enter loop, use 'exit' to finish.
 
 bash-3.2$ pass addcustompassphrase
 Enter 'exit' to exit
@@ -20,7 +20,7 @@ EnterWebSite :
 www.github.com
 olWt5dLEZv
 
-3) specify an argument to use as a custom passphrase and a phrase to operate on
+3) Specify an argument to use as a custom passphrase and a phrase to operate on, this does not enter a loop.
 
 bash-3.2$ pass addcustompassphrase www.github.com
 olWt5dLEZv
