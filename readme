@@ -4,7 +4,7 @@ This is my attempt to never have to worry about password similarity and remember
 
 The program takes any phrase and returns a 10 character string, there are a couple of configurations and uses:
 
-1) Use the default passphrase and just run the CLI in a loop (change this if using), use 'exit' to finish.
+1) Use the default passphrase (change this if using) and just run the CLI in a loop, use 'exit' to finish.
 
 bash-3.2$ pass
 Enter 'exit' to exit
@@ -30,4 +30,3 @@ The program uses DES,strips out some unwanted char's and trims the password down
 I've compiled to a executable Jar and placed the alias 'pass' in my .bashrc to allow easier access.
 
 alias pass="java -jar /Users/lewis/Dropbox/apps/password.jar"
-
